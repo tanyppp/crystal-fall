@@ -1,0 +1,137 @@
+@keyframes raindrop-run {
+  0% {
+    top: 0%;
+  }
+
+  100% {
+    top: calc(100vh - 16px);
+    opacity: 0;
+  }
+}
+
+html,
+body,
+.crystal-container {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+}
+
+#crystal-body {
+  position: relative;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.crystal-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: #333;
+}
+
+.crystal-img img {
+  width: 200px;
+  height: 200px;
+  border: 2px solid #f2f2f2;
+  border-radius: 50%;
+  margin-bottom: 13px;
+}
+
+.crystal-fall-container {
+  display: flex;
+  align-items: center;
+}
+
+.crystal,
+.fall {
+  font-size: 26px;
+  font-weight: 600;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.crystal {
+  background-image: linear-gradient(to top right, rgb(97, 111, 252), rgb(253, 231, 216));
+}
+
+.fall {
+  margin-left: 13px;
+  background-image: linear-gradient(to bottom right, rgb(253, 231, 216), rgb(97, 111, 252));
+}
+
+.crystal-raindrop {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 4px;
+  height: 16px;
+  color: #fff;
+  font-size: 13px;
+  border-radius: 2px;
+  background-image: linear-gradient(to bottom, rgb(253, 231, 216), rgb(97, 111, 252));
+}
+
+.crystal-raindrop::before {
+  content: ' ';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%) translateY(calc(-100% - 3px));
+  color: rgb(97, 111, 252);
+}
+
+.crystal-raindrop-1 {
+  left: calc(100% / 6 - 100% / 12 - 2px);
+  animation: raindrop-run 13s 2s;
+}
+
+.crystal-raindrop-1::before {
+  content: '哒棒棒师老王';
+}
+
+.crystal-raindrop-2 {
+  left: calc(100% / 6 * 2 - 100% / 12 - 2px);
+  animation: raindrop-run 13s 6s;
+}
+
+.crystal-raindrop-2::before {
+  content: '哒美美师老王';
+}
+
+.crystal-raindrop-3 {
+  left: calc(100% / 6 * 3 - 100% / 12 - 2px);
+  animation: raindrop-run 13s 10s;
+}
+
+.crystal-raindrop-3::before {
+  content: '爱可超师老王';
+}
+
+.crystal-raindrop-4 {
+  left: calc(100% / 6 * 4 - 100% / 12 - 2px);
+  animation: raindrop-run 13s 14s;
+}
+
+.crystal-raindrop-4::before {
+  content: '性知超师老王';
+}
+
+.crystal-raindrop-5 {
+  left: calc(100% / 6 * 5 - 100% / 12 - 2px);
+  animation: raindrop-run 13s 18s;
+}
+
+.crystal-raindrop-5::before {
+  content: '乐快活生师老王';
+}
+
+.crystal-raindrop-6 {
+  left: calc(100% - 100% / 12 - 2px);
+  animation: raindrop-run 13s 22s;
+}
+
+.crystal-raindrop-6::before {
+  content: '意胜事万师老王';
+}
