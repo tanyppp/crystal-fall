@@ -43,16 +43,11 @@ body,
   align-items: center;
 }
 
-.crystal,
-.fall {
+.crystal {
   font-size: 25px;
   font-weight: 600;
   color: rgb(97, 111, 252);
   opacity: .76;
-}
-
-.fall {
-  margin-left: 13px;
 }
 
 .crystal-raindrop {
