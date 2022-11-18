@@ -5,7 +5,6 @@
 
   100% {
     top: calc(100vh - 16px);
-    opacity: 0;
   }
 }
 
@@ -36,7 +35,7 @@ body,
   height: 200px;
   border: 2px solid #f2f2f2;
   border-radius: 50%;
-  margin-bottom: 13px;
+  margin-bottom: 12px;
 }
 
 .crystal-fall-container {
@@ -46,19 +45,14 @@ body,
 
 .crystal,
 .fall {
-  font-size: 26px;
+  font-size: 25px;
   font-weight: 600;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.crystal {
-  background-image: linear-gradient(to top right, rgb(97, 111, 252), rgb(253, 231, 216));
+  color: rgb(97, 111, 252);
+  opacity: .76;
 }
 
 .fall {
   margin-left: 13px;
-  background-image: linear-gradient(to bottom right, rgb(253, 231, 216), rgb(97, 111, 252));
 }
 
 .crystal-raindrop {
@@ -68,9 +62,9 @@ body,
   width: 4px;
   height: 16px;
   color: #fff;
-  font-size: 13px;
+  font-size: 12px;
   border-radius: 2px;
-  background-image: linear-gradient(to bottom, rgb(253, 231, 216), rgb(97, 111, 252));
+  background-color: rgb(97, 111, 252);
 }
 
 .crystal-raindrop::before {
@@ -84,54 +78,54 @@ body,
 
 .crystal-raindrop-1 {
   left: calc(100% / 6 - 100% / 12 - 2px);
-  animation: raindrop-run 13s 2s;
+  animation: raindrop-run 12s 2s;
 }
 
 .crystal-raindrop-1::before {
-  content: '哒棒棒师老王';
+  content: '祝';
 }
 
 .crystal-raindrop-2 {
   left: calc(100% / 6 * 2 - 100% / 12 - 2px);
-  animation: raindrop-run 13s 6s;
+  animation: raindrop-run 12s 3s;
 }
 
 .crystal-raindrop-2::before {
-  content: '哒美美师老王';
+  content: '愿';
 }
 
 .crystal-raindrop-3 {
   left: calc(100% / 6 * 3 - 100% / 12 - 2px);
-  animation: raindrop-run 13s 10s;
+  animation: raindrop-run 12s 4s;
 }
 
 .crystal-raindrop-3::before {
-  content: '爱可超师老王';
+  content: '万';
 }
 
 .crystal-raindrop-4 {
   left: calc(100% / 6 * 4 - 100% / 12 - 2px);
-  animation: raindrop-run 13s 14s;
+  animation: raindrop-run 12s 5s;
 }
 
 .crystal-raindrop-4::before {
-  content: '性知超师老王';
+  content: '事';
 }
 
 .crystal-raindrop-5 {
   left: calc(100% / 6 * 5 - 100% / 12 - 2px);
-  animation: raindrop-run 13s 18s;
+  animation: raindrop-run 12s 6s;
 }
 
 .crystal-raindrop-5::before {
-  content: '乐快活生师老王';
+  content: '胜';
 }
 
 .crystal-raindrop-6 {
   left: calc(100% - 100% / 12 - 2px);
-  animation: raindrop-run 13s 22s;
+  animation: raindrop-run 12s 7s;
 }
 
 .crystal-raindrop-6::before {
-  content: '意胜事万师老王';
+  content: '意';
 }
